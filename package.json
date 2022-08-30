@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "start:dev": "ts-node ./server.ts",
     "start": "node ./dist/server.js",
     "start:watch": "nodemon",
@@ -41,7 +42,15 @@
     "nodemon": "^1.19.1",
     "ts-node": "^8.2.0",
     "twilio": "^3.80.0",
-    "typescript": "^3.5.1",
     "xss-filters": "^1.2.7"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "eslint": "^8.23.0",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
+    "typescript": "^4.8.2"
   }
 }
