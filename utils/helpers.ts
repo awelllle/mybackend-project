@@ -1,14 +1,6 @@
 import { Response } from "express";
 
 
-import { body } from "express-validator";
-
-// import utils from "utils";
-
-interface TransactionQuery {
-  email: string;
-  transactionType?: "debit" | "credit";
-}
 
 type DynamicContent =
   | string
@@ -16,10 +8,6 @@ type DynamicContent =
   | null
   | undefined
   | number;
-
-const getRandomInt = function (min: number, max: number) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
 
 
 
