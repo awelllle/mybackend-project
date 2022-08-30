@@ -1,16 +1,10 @@
 import { Response } from "express";
-
-
-
 type DynamicContent =
   | string
   | Record<string, unknown>
   | null
   | undefined
   | number;
-
-
-
 
 const sendSuccessResponse = function (
   res: Response,
@@ -106,12 +100,10 @@ const validParam = (
 };
 
 
-
 export default {
   
   sendSuccessResponse,
   sendErrorResponse,
   trimCollection,
   validParam,
- 
 };

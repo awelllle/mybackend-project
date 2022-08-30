@@ -18,7 +18,7 @@ export class AppController {
       const valid = (new Date(dob)).getTime() > 0;
 
       if (!valid) {
-        return utils.helpers.sendErrorResponse(res, 
+        return utils.helpers.sendErrorResponse(res,
           {},
            "Invalid date of birth param" 
            )

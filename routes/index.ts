@@ -1,11 +1,6 @@
-import { Request, Response } from 'express';
-
-
-import { AppRoutes } from './app';
-
-
+import { Request, Response } from "express";
+import { AppRoutes } from "./app";
 export class Routes {
- 
   public appRoutes: AppRoutes = new AppRoutes();
 
   public routes(app): void {
