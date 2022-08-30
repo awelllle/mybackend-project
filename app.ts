@@ -7,7 +7,7 @@ import * as bodyParser from "body-parser";
 
 import * as cors from 'cors'
 
-import { Routes } from './routes';
+import { Routes } from './routes/index';
 
 
 class App {

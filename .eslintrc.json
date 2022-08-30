@@ -8,6 +8,7 @@
     "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:vue/recommended"],
     "rules": {
      
+      "node/no-missing-import": "error"
     },
     "env": {
       "browser": true,

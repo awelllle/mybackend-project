@@ -1,4 +1,3 @@
-
 import { Request, Response } from "express";
 import { AxiosError } from 'axios';
 import { differenceInYears } from 'date-fns'
@@ -20,8 +19,9 @@ export class AppController {
 
       if (!valid) {
         return utils.helpers.sendErrorResponse(res, 
-          { },
-           "Invalid date of birth param")
+          {},
+           "Invalid date of birth param" 
+           )
       }
    
     
