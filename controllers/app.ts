@@ -1,6 +1,6 @@
 
 import { Request, Response } from 'express';
-import axios, { AxiosError } from 'axios';
+import { AxiosError } from 'axios';
 import { differenceInYears } from 'date-fns'
 import { default as utils }from '../utils'
 

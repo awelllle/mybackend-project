@@ -1,13 +1,7 @@
-import * as jwt from "jsonwebtoken";
+
 
 import { Request, Response } from "express";
 
-
-type MyToken = {
-  email: string
-  iat: number
-  exp: number
-}
 
 
 
