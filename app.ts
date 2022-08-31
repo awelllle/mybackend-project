@@ -16,6 +16,7 @@ class App {
     this.app = express();
     this.config();
     this.route.routes(this.app);
+    this.app.set('trust proxy', 1)
         
     }
 
