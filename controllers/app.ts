@@ -27,11 +27,13 @@ export class AppController {
     
       const age = differenceInYears(new Date(), new Date(`${dob}`));
     
-      return res.status(200).send(age);
+      return res.status(200).json({age:age});
 
   }catch(e){
       const error = e as AxiosError;
       console.log(error);
+      return res.status(400).json(error);
+     
 
   
   }
