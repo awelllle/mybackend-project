@@ -24,8 +24,8 @@ class AppController {
                 if (!valid) {
                     return utils_1.default.helpers.sendErrorResponse(res, {}, "Invalid date of birth param");
                 }
-                const result = (0, date_fns_1.differenceInYears)(new Date(), new Date(`${dob}`));
-                return utils_1.default.helpers.sendSuccessResponse(res, { result }, 'Year');
+                const age = (0, date_fns_1.differenceInYears)(new Date(), new Date(`${dob}`));
+                return res.status(200).send(age);
             }
             catch (e) {
                 const error = e;

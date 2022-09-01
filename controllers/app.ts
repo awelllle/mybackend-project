@@ -25,8 +25,9 @@ export class AppController {
       }
    
     
-      const result = differenceInYears(new Date(), new Date(`${dob}`));
-      return utils.helpers.sendSuccessResponse(res, { result }, 'Year')
+      const age = differenceInYears(new Date(), new Date(`${dob}`));
+    
+      return res.status(200).send(age);
 
   }catch(e){
       const error = e as AxiosError;
